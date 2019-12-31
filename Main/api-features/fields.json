@@ -1,0 +1,25 @@
+﻿{
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "results": {
+    "entries": [
+      "",
+      "pronunciations",
+      "etymologies",
+      "regions",
+      "examples",
+      "shortDefinitions",
+      "domains",
+      "registers",
+      "variantForms",
+      "definitions"
+    ],
+    "thesaurus": [
+      "antonyms",
+      "synonyms"
+    ]
+  }
+}

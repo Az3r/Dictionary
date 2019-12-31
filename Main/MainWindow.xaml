@@ -11,9 +11,21 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <DockPanel Grid.Row="0" VerticalAlignment="Center">
-            <Label Content="URL:" VerticalContentAlignment="Center"/>
-            <TextBox Height="30" Text="sample text" VerticalContentAlignment="Center"/>
+        <DockPanel Grid.Row="0" VerticalAlignment="Center" LastChildFill="True" >
+            <Label Content="URL:" VerticalContentAlignment="Center" Cursor="Hand" MouseLeftButtonUp="Label_MouseLeftButtonUp"/>
+            <Button DockPanel.Dock="Right"
+                    Margin="10 0 10 0" Padding="5"
+                    Content="search"
+                    Click="Button_Click"/>
+            <TextBox Name="tbURL"
+                     Height="30" 
+                     Text="sample text"
+                     VerticalContentAlignment="Center"/>
         </DockPanel>
+        <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock Name="tblContent" Grid.Row="1"/>
+            </ScrollViewer>
+        </Border>
     </Grid>
 </Window>

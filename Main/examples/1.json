@@ -1,0 +1,167 @@
+﻿{ // entries/en-gb/name?fields=definitions,pronunciations
+  "id": "name",
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "results": [
+    {
+      "id": "name",
+      "language": "en-gb",
+      "lexicalEntries": [
+        {
+          "entries": [
+            {
+              "senses": [
+                {
+                  "definitions": [
+                    "a word or set of words by which a person or thing is known, addressed, or referred to"
+                  ],
+                  "id": "m_en_gbus0676830.006"
+                },
+                {
+                  "definitions": [
+                    "a famous person"
+                  ],
+                  "id": "m_en_gbus0676830.011",
+                  "subsenses": [
+                    {
+                      "definitions": [
+                        "a reputation, especially a good one"
+                      ],
+                      "id": "m_en_gbus0676830.012"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "(in the UK) an insurance underwriter belonging to a Lloyd's syndicate."
+                  ],
+                  "id": "m_en_gbus0676830.015"
+                }
+              ]
+            }
+          ],
+          "language": "en-gb",
+          "lexicalCategory": {
+            "id": "noun",
+            "text": "Noun"
+          },
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/name_gb_1.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "neɪm"
+            }
+          ],
+          "text": "name"
+        },
+        {
+          "entries": [
+            {
+              "senses": [
+                {
+                  "definitions": [
+                    "give a name to"
+                  ],
+                  "id": "m_en_gbus0676830.018",
+                  "subsenses": [
+                    {
+                      "definitions": [
+                        "identify correctly by name"
+                      ],
+                      "id": "m_en_gbus0676830.024"
+                    },
+                    {
+                      "definitions": [
+                        "give a particular title or epithet to"
+                      ],
+                      "id": "m_en_gbus0676830.025"
+                    },
+                    {
+                      "definitions": [
+                        "mention by name"
+                      ],
+                      "id": "m_en_gbus0676830.026"
+                    },
+                    {
+                      "definitions": [
+                        "appoint (someone) to a particular position or task"
+                      ],
+                      "id": "m_en_gbus0676830.027"
+                    },
+                    {
+                      "definitions": [
+                        "(of the Speaker) mention (a Member of Parliament) by name as disobedient to the chair and thereby subject to a ban from the House."
+                      ],
+                      "id": "m_en_gbus0676830.028"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "specify (a sum, time, or place) as something desired, suggested, or decided on"
+                  ],
+                  "id": "m_en_gbus0676830.030"
+                }
+              ]
+            }
+          ],
+          "language": "en-gb",
+          "lexicalCategory": {
+            "id": "verb",
+            "text": "Verb"
+          },
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/name_gb_1.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "neɪm"
+            }
+          ],
+          "text": "name"
+        },
+        {
+          "entries": [
+            {
+              "senses": [
+                {
+                  "definitions": [
+                    "(of a person or product) having a well-known name"
+                  ],
+                  "id": "m_en_gbus0676830.032"
+                }
+              ]
+            }
+          ],
+          "language": "en-gb",
+          "lexicalCategory": {
+            "id": "adjective",
+            "text": "Adjective"
+          },
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/name_gb_1.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "neɪm"
+            }
+          ],
+          "text": "name"
+        }
+      ],
+      "type": "headword",
+      "word": "name"
+    }
+  ],
+  "word": "name"
+}
