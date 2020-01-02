@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Main.APIConstants
+namespace Main.API
 {
     public static class LexicalCategories
     {
