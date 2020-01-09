@@ -17,14 +17,14 @@
                     Margin="10 0 10 0" Padding="5"
                     Content="search"
                     Click="Button_Click"/>
-            <TextBox Name="tbURL"
+            <TextBox Name="tbWordToSearch"
                      Height="30" 
                      Text="sample text"
                      VerticalContentAlignment="Center"/>
         </DockPanel>
         <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="1">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <TextBlock Name="tblContent" Grid.Row="1"/>
+                <TextBlock Name="tblContent" Text="{Binding ResultText}"/>
             </ScrollViewer>
         </Border>
     </Grid>

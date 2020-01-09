@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Main.API
 {
-    public static class API
+    public static class APIInfo
     {
         public const string BASE_URL = "https://od-api.oxforddictionaries.com/api/v2";
         public const string APP_ID = "5fa279e3";
