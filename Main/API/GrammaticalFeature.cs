@@ -4,7 +4,10 @@ using System.Text;
 using Newtonsoft.Json;
 namespace Main.API
 {
-    public class GrammaticalFeature : BaseResponse
+    /// <summary>
+    /// Response message that provide extra information about a <see cref="LexicalCategories"/>
+    /// </summary>
+    public class GrammaticalFeature : APIReponse
     {
         [JsonProperty("type")]
         public string Type { get; set; } = null;

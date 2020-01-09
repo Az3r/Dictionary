@@ -7,7 +7,7 @@ namespace Main.API
     /// <summary>
     /// Base class for response message which contains only <see cref="ID"/> and <see cref="Text"/>
     /// </summary>
-    public abstract class BaseResponse
+    public abstract class APIReponse
     {
         [JsonProperty("id")]
         public string ID { get; set; } = null;

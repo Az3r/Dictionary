@@ -7,20 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="api-features\lexical-categories.json" />
     <None Remove="grammatical-features.json" />
     <None Remove="languages.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="api-features\grammatical-features.json" />
-    <Compile Include="api-features\languages.json" />
-    <Compile Include="api-features\lexical-categories.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>

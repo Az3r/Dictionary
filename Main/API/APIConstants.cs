@@ -4,6 +4,12 @@ using System.Text;
 
 namespace Main.API
 {
+    public static class API
+    {
+        public const string BASE_URL = "https://od-api.oxforddictionaries.com/api/v2";
+        public const string APP_ID = "5fa279e3";
+        public const string APP_KEY = "f0c1503fffd8f1003c440bea6b9c5664";
+    }
     public static class LexicalCategories
     {
         public const string ADJECTIVE = "adjective";
@@ -40,5 +46,12 @@ namespace Main.API
         public const string EXAMPLES = "examples";
         public const string DOMAINS = "domains";
         public const string SYNONYMS = "synonyms";
+    }
+
+    public static class JSONResult
+    {
+        public const string ID = "id";
+        public const string LANGUAGE = "language";
+        public const string LEXICAL_ENTRIES = "lexicalEntries";
     }
 }

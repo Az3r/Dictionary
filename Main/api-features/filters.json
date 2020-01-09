@@ -1,27 +1,27 @@
 ﻿{
-  "metadata": {
-    "operation": "retrieve",
-    "provider": "Oxford University Press",
-    "schema": "RetrieveEntry"
-  },
-  "results": {
-    "entries": [
-      "registers",
-      "inflections",
-      "translations",
-      "lexicalCategory",
-      "antonyms",
-      "definitions",
-      "pronunciations",
-      "grammaticalFeatures",
-      "regions",
-      "examples",
-      "domains",
-      "synonyms"
-    ],
-    "lemmas": [
-      "lexicalCategory",
-      "grammaticalFeatures"
-    ]
-  }
+    "metadata": {
+        "operation": "retrieve",
+        "provider": "Oxford University Press",
+        "schema": "RetrieveEntry"
+    },
+    "results": {
+        "entries": [
+            "registers",
+            "inflections",
+            "translations",
+            "lexicalCategory",
+            "antonyms",
+            "definitions",
+            "pronunciations",
+            "grammaticalFeatures",
+            "regions",
+            "examples",
+            "domains",
+            "synonyms"
+        ],
+        "lemmas": [
+            "lexicalCategory",
+            "grammaticalFeatures"
+        ]
+    }
 }
