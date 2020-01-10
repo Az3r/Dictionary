@@ -62,5 +62,24 @@ namespace Main.API
         public const string OPERATION = "operation";
         public const string PROVIDER = "provider";
         public const string SCHEMA = "schema";
+        public const string CONSTRUCTIONS = "constructions";
+        public const string CROSS_REFERENCE_MARKERS = "crossReferenceMarkers";
+    }
+
+    /// <summary>
+    /// Possible relation types between two words
+    /// </summary>
+    public static class RelationTypes
+    {
+        // CrossReferences
+        public const string CLOSE_MATCH = "close match";
+        public const string RELATED = "related";
+        public const string SEE_ALSO = "see also";
+        public const string VARIANT_SPELLING = "variant spelling";
+        public const string ABBREVIATION = "abbreviation";
+
+        // Collocates
+        public const string PRE = "pre";
+        public const string POST = "post";
     }
 }
