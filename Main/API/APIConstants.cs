@@ -69,8 +69,9 @@ namespace Main.API
         public const string NOTES = "notes";
         public const string AUDIO_FILE = "audioFile";
         public const string DIALECTS = "dialects";
-        public const string PHONETIC_NOTATION = "phoneticNotation ";
-        public const string PHONETIC_SPELLING = "phoneticSpelling  ";
+        public const string PHONETIC_NOTATION = "phoneticNotation";
+        public const string PHONETIC_SPELLING = "phoneticSpelling ";
+        public const string shortDefinitions = "shortDefinitions";
     }
 
     /// <summary>
