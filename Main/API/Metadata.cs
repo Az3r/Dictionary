@@ -5,9 +5,9 @@ using Newtonsoft.Json;
 namespace Main.API
 {
     /// <summary>
-    /// Information about API's provider, schema and operation
+    /// Additional Information provided by Oxford University Press
     /// </summary>
-    public class ResponseMetadata
+    public class Metadata
     {
         [JsonProperty(JSONProperties.OPERATION)]
         public string Operation { get; set; }

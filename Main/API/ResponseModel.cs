@@ -5,13 +5,16 @@ using Newtonsoft.Json;
 namespace Main.API
 {
     /// <summary>
-    /// Base class for response message which contains only <see cref="ID"/> and <see cref="Text"/>
+    /// Basic model which contains only <see cref="ID"/>, <see cref="Type"/> and <see cref="Text"/>
     /// </summary>
-    public class CommonResponse
+    public class ModelResponse
     {
         [JsonProperty(JSONProperties.ID)]
         public string ID { get; set; }
         [JsonProperty(JSONProperties.TEXT)]
         public string Text { get; set; }
+
+        [JsonProperty(JSONProperties.TYPE)]
+        public string Type { get; set; }
     }
 }
