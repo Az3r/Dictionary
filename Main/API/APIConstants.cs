@@ -66,6 +66,11 @@ namespace Main.API
         public const string CROSS_REFERENCE_MARKERS = "crossReferenceMarkers";
         public const string ETYMOLOGIES = "etymologies";
         public const string SENSE_IDS = "senseIds";
+        public const string NOTES = "notes";
+        public const string AUDIO_FILE = "audioFile";
+        public const string DIALECTS = "dialects";
+        public const string PHONETIC_NOTATION = "phoneticNotation ";
+        public const string PHONETIC_SPELLING = "phoneticSpelling  ";
     }
 
     /// <summary>

@@ -7,9 +7,9 @@ namespace Main.API
     /// <summary>
     /// Response message that provide extra information about a <see cref="LexicalCategories"/>
     /// </summary>
-    public class GrammaticalFeature : CommonResponse
+    public class GrammaticalFeature : ResponseModel
     {
         [JsonProperty(JSONProperties.TYPE)]
-        public string WordType { get; set; } = null;
+        public string Type { get; set; } = null;
     }
 }
