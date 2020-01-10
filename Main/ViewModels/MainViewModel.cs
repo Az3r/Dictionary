@@ -7,6 +7,8 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.ComponentModel;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using Main.API;
 namespace Main.ViewModels
 {
@@ -20,7 +22,33 @@ namespace Main.ViewModels
             mClient.Timeout = TimeSpan.FromMilliseconds(REQUEST_TIME_OUT);
         }
 
-        public async Task<List<Le>>
+        public async Task<ResponseBody> Lemmas(string word)
+        {
+            string query = QueryUltility.CreateLemmasQuery(word);
+            try
+            {
+                Uri uri = new Uri(query);
+                HttpResponseMessage response = await mClient.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
+                HttpContent content = response.Content;
+                string jsoncontent = await content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<ResponseBody>(jsoncontent);
+            }
+            catch (UriFormatException uriEx)
+            {
+                Trace.WriteLine(uriEx.Message);
+                return null;
+            }
+            catch (JsonException jsonEx)
+            {
+                Trace.Write(jsonEx.Message);
+                return null;
+            }
+            catch(Exception e)
+            {
+                Trace.Write(e.Message);
+                return null;
+            }
+        }
         public async Task<bool> FindWordAsync(string word)
         {
             Task<bool> task = Task.Factory.StartNew(() =>
