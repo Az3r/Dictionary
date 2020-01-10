@@ -11,7 +11,7 @@ namespace Main.API
     public class ResponseBody
     {
         [JsonProperty(JSONProperties.METADATA)]
-        public ResponseMetadata Metadata { get; set; }
+        public Metadata Metadata { get; set; }
 
         [JsonProperty(JSONProperties.RESULTS)]
         public List<ResponseResult> Results { get; set; }
