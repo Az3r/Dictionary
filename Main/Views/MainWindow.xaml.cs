@@ -17,7 +17,7 @@ using System.Net.Http.Headers;
 using System.Net;
 using Main.ViewModels;
 using Main.API;
-
+using Main.Ultilities;
 namespace Main.Views
 {
     /// <summary>
@@ -43,9 +43,9 @@ namespace Main.Views
             TaskScheduler scheduler = TaskScheduler.Current;
             VM.Lemmas(word).ContinueWith((task) =>
             {
-                if (task.Result is null) VM.ResultText = "Not Found";
-                if (task.Result) VM.ResultText = "Found";
-                else VM.ResultText = "Not Found";
+                ResponseBody body = task.Result;
+                if (body is null) VM.ResultText = "Not Found";
+                else VM.ResultText = body.ToString();
             }, scheduler);
         }
 

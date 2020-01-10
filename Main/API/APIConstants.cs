@@ -56,5 +56,8 @@ namespace Main.API
         public const string INFLECTION_OF = "inflectionOf";
         public const string WORD = "word";
         public const string RESULTS = "results";
+        public const string TYPE = "type";
+        public const string TEXT = "text";
+        public const string METADATA = "metadata";
     }
 }

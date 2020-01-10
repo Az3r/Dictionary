@@ -9,8 +9,10 @@ namespace Main.API
     {
         [JsonProperty(Filters.GRAMMATICAL_FEATURES)]
         public List<GrammaticalFeature> GrammaticalFeatures { get; set; }
+
         [JsonProperty(JSONProperties.INFLECTION_OF)]
-        public CommonResponse InfectionOf { get; set; }
+        public List<CommonResponse> InfectionOf { get; set; }
+
         [JsonProperty(Filters.LEXICAL_CATEGORY)]
         public CommonResponse LexicalCategory { get; set; }
     }

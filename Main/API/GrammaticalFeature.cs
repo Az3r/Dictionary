@@ -9,7 +9,7 @@ namespace Main.API
     /// </summary>
     public class GrammaticalFeature : CommonResponse
     {
-        [JsonProperty("type")]
-        public string Type { get; set; } = null;
+        [JsonProperty(JSONProperties.TYPE)]
+        public string WordType { get; set; } = null;
     }
 }

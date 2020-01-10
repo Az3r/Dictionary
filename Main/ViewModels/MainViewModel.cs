@@ -7,8 +7,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.ComponentModel;
-using System.Text.Json.Serialization;
-using System.Text.Json;
+using Newtonsoft.Json;
 using Main.API;
 namespace Main.ViewModels
 {
@@ -24,14 +23,18 @@ namespace Main.ViewModels
 
         public async Task<ResponseBody> Lemmas(string word)
         {
+            string jsonContent = await GetResponseString(word);
+            return JsonConvert.DeserializeObject<ResponseBody>(jsonContent);
+        }
+
+        private async Task<string> GetResponseString(string word)
+        {
             string query = QueryUltility.CreateLemmasQuery(word);
             try
             {
                 Uri uri = new Uri(query);
-                HttpResponseMessage response = await mClient.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
-                HttpContent content = response.Content;
-                string jsoncontent = await content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<ResponseBody>(jsoncontent);
+                HttpResponseMessage httpResponse = await mClient.GetAsync(uri, HttpCompletionOption.ResponseContentRead);
+                return httpResponse.Content.ReadAsStringAsync().Result;
             }
             catch (UriFormatException uriEx)
             {
@@ -43,12 +46,13 @@ namespace Main.ViewModels
                 Trace.Write(jsonEx.Message);
                 return null;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.Write(e.Message);
                 return null;
             }
         }
+
         public async Task<bool> FindWordAsync(string word)
         {
             Task<bool> task = Task.Factory.StartNew(() =>

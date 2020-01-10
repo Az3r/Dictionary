@@ -24,7 +24,7 @@
         </DockPanel>
         <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="1">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <TextBlock Name="tblContent" Text="{Binding ResultText}"/>
+                <TextBlock Name="tblContent" Text="{Binding ResultText}" TextWrapping="Wrap"/>
             </ScrollViewer>
         </Border>
     </Grid>

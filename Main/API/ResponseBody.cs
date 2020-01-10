@@ -10,16 +10,15 @@ namespace Main.API
     /// </summary>
     public class ResponseBody
     {
+        [JsonProperty(JSONProperties.METADATA)]
+        public string Metadata { get; set; }
+
         [JsonProperty(JSONProperties.RESULTS)]
         public List<ResponseResult> Results { get; set; }
 
         public override string ToString()
         {
-            JsonSerializer serializer = new JsonSerializer();
-            StringWriter stringWriter = new StringWriter();
-            JsonWriter writer = new JsonTextWriter(stringWriter);
-            serializer.Serialize(writer, this, typeof(ResponseBody));
-            return stringWriter.ToString();
+            return JsonConvert.SerializeObject(this);
         }
     }
 }
