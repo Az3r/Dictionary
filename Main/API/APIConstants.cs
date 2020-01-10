@@ -48,10 +48,13 @@ namespace Main.API
         public const string SYNONYMS = "synonyms";
     }
 
-    public static class JSONResult
+    public static class JSONProperties
     {
         public const string ID = "id";
         public const string LANGUAGE = "language";
         public const string LEXICAL_ENTRIES = "lexicalEntries";
+        public const string INFLECTION_OF = "inflectionOf";
+        public const string WORD = "word";
+        public const string RESULTS = "results";
     }
 }
