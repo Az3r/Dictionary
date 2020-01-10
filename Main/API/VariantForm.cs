@@ -17,5 +17,7 @@ namespace Main.API
         /// </summary>
         [JsonProperty(Filters.REGIONS)]
         public List<ResponseModel> Regions { get; set; }
+
+        public List<ResponseModel> DerivativeOf { get; set; }
     }
 }

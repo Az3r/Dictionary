@@ -73,6 +73,9 @@ namespace Main.API
         public const string PHONETIC_SPELLING = "phoneticSpelling";
         public const string SHORT_DEFINITIONS = "shortDefinitions";
         public const string SUBSENSES = "subsenses";
+        public const string VARIANT_FORMS = "variantForms ";
+        public const string DERIVATIVE_OF = "derivativeOf  ";
+        public const string DERIVATIVES = "derivatives  ";
     }
 
     /// <summary>
