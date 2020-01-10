@@ -59,5 +59,8 @@ namespace Main.API
         public const string TYPE = "type";
         public const string TEXT = "text";
         public const string METADATA = "metadata";
+        public const string OPERATION = "operation";
+        public const string PROVIDER = "provider";
+        public const string SCHEMA = "schema";
     }
 }
