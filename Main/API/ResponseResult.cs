@@ -4,7 +4,10 @@ using System.Text;
 using Newtonsoft.Json;
 namespace Main.API
 {
-    public class Result : CommonResponse
+    /// <summary>
+    /// The result that is returned by server when calling one of the server's methods
+    /// </summary>
+    public class ResponseResult : CommonResponse
     {
         [JsonProperty(JSONProperties.LANGUAGE)]
         public string Language { get; set; }

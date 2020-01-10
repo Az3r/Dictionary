@@ -16,6 +16,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net;
 using Main.ViewModels;
+using Main.API;
 
 namespace Main.Views
 {
@@ -40,8 +41,9 @@ namespace Main.Views
         {
             string word = tbWordToSearch.Text;
             TaskScheduler scheduler = TaskScheduler.Current;
-            VM.FindWordAsync(word).ContinueWith((task) =>
+            VM.Lemmas(word).ContinueWith((task) =>
             {
+                if (task.Result is null) VM.ResultText = "Not Found";
                 if (task.Result) VM.ResultText = "Found";
                 else VM.ResultText = "Not Found";
             }, scheduler);
