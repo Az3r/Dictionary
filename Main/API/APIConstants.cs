@@ -64,6 +64,8 @@ namespace Main.API
         public const string SCHEMA = "schema";
         public const string CONSTRUCTIONS = "constructions";
         public const string CROSS_REFERENCE_MARKERS = "crossReferenceMarkers";
+        public const string ETYMOLOGIES = "etymologies";
+        public const string SENSE_IDS = "senseIds";
     }
 
     /// <summary>
