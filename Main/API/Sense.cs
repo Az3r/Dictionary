@@ -77,6 +77,13 @@ namespace Main.API
         /// <summary>
         /// Various words that are used interchangeably depending on the context, e.g 'duck' and 'duck boat'
         /// </summary>
-        public List<ResponseModel> VariantForms { get; set; }
+        [JsonProperty(JSONProperties.VARIANT_FORMS)]
+        public List<VariantForm> VariantForms { get; set; }
+
+        /// <summary>
+        /// Ordered list of subsenses of a sense ,
+        /// </summary>
+        [JsonProperty(JSONProperties.SUBSENSES)]
+        public List<Sense> SubSenses { get; set; }
     }
 }
