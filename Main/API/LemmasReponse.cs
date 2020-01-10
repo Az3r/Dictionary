@@ -10,6 +10,6 @@ namespace Main.API
         public string Language { get; set; }
         [JsonProperty("word")]
         public string Word { get; set; }
-        public List<LexcicalEntry> LexcicalEntries { get; set; }
+        public List<LexicalEntry> LexcicalEntries { get; set; }
     }
 }

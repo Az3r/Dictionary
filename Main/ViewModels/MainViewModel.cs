@@ -7,6 +7,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.ComponentModel;
+using Main.API;
 namespace Main.ViewModels
 {
     public class MainViewModel : BindingUltility, IDisposable
@@ -19,6 +20,7 @@ namespace Main.ViewModels
             mClient.Timeout = TimeSpan.FromMilliseconds(REQUEST_TIME_OUT);
         }
 
+        public async Task<List<Le>>
         public async Task<bool> FindWordAsync(string word)
         {
             Task<bool> task = Task.Factory.StartNew(() =>
