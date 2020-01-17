@@ -18,13 +18,18 @@ using System.Net;
 using Main.ViewModels;
 using Main.API;
 using Main.Ultilities;
+using System.Diagnostics;
+
 namespace Main.Views
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainViewModel VM { get; set; } = new MainViewModel();
+
         public MainWindow()
         {
             DataContext = VM;
@@ -34,10 +39,27 @@ namespace Main.Views
 
         private void Label_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            tbWordToSearch.SelectAll();
             Keyboard.Focus(tbWordToSearch);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void FocusSearchBox()
+        {
+            tbWordToSearch.SelectAll();
+            Keyboard.Focus(tbWordToSearch);
+        }
+
+        private void tbWordToSearch_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Search_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void Search_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             string word = tbWordToSearch.Text;
             TaskScheduler scheduler = TaskScheduler.Current;
@@ -48,7 +70,5 @@ namespace Main.Views
                 else VM.ResultText = body.ToString();
             }, scheduler);
         }
-
-        public MainViewModel VM { get; set; } = new MainViewModel();
     }
 }

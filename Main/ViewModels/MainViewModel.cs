@@ -18,7 +18,7 @@ namespace Main.ViewModels
             mClient.DefaultRequestHeaders.Add("app_id", API.APIInfo.APP_ID);
             mClient.DefaultRequestHeaders.Add("app_key", API.APIInfo.APP_KEY);
             mClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            mClient.Timeout = TimeSpan.FromMilliseconds(REQUEST_TIME_OUT);
+            mClient.Timeout = TimeSpan.FromMilliseconds(10000);
         }
 
         public async Task<ResponseLemmas> Lemmas(string word)
@@ -83,6 +83,7 @@ namespace Main.ViewModels
 
 
 #region Binding properties
+
         private string mResultText;
         public string ResultText
         {
@@ -93,9 +94,9 @@ namespace Main.ViewModels
                 NotifyPropertyChanged();
             }
         }
+
 #endregion
 
-        private HttpClient mClient = new HttpClient();
-        private const int REQUEST_TIME_OUT = 10000;   // 10 seconds
+        private readonly HttpClient mClient = new HttpClient();
     }
 }
