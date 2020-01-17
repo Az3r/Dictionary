@@ -76,6 +76,8 @@ namespace Main.API
         public const string VARIANT_FORMS = "variantForms ";
         public const string DERIVATIVE_OF = "derivativeOf  ";
         public const string DERIVATIVES = "derivatives  ";
+        public const string HOMOGRAPH_NUMBER = "homographNumber";
+        public const string SENSES = "senses";
     }
 
     /// <summary>

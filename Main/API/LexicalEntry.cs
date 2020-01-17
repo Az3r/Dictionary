@@ -35,6 +35,6 @@ namespace Main.API
         public List<InlineModel_1> Derivatives { get; set; }
 
         [JsonProperty(Filters.PRONUNCIATIONS)]
-        public List<Pronounciation> Pronunciations { get; set; }
+        public List<InlineModel_3> Pronunciations { get; set; }
     }
 }

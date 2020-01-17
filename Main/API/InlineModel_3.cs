@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 
 namespace Main.API
 {
+    /// <summary>For pronounciation response</summary>
     public class InlineModel_3
     {
         ///<summary>The URL of the sound file</summary>
