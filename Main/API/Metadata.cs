@@ -17,5 +17,8 @@ namespace Main.API
 
         [JsonProperty(JSONProperties.SCHEMA)]
         public string Schema { get; set; }
+
+        [JsonProperty(JSONProperties.TOTAL)]
+        public int Total { get; set; }
     }
 }
