@@ -4,10 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 namespace Main.API
 {
-    /// <summary>
-    /// A word's sense
-    /// </summary>
-    public class Sense
+    public class Sense : InlineModel_2
     {
         /// <summary>
         /// A grouping of crossreference notes
@@ -24,47 +21,13 @@ namespace Main.API
         public List<InlineModel_1> CrossReferences { get; set; }
 
         /// <summary>
-        ///  A list of statements of the exact meaning of a word
-        /// </summary>
-        [JsonProperty(Filters.DEFINITIONS)]
-        public List<string> Definitions { get; set; }
-
-        /// <summary>
-        /// A subject, discipline, or branch of knowledge particular to the Sense
-        /// </summary>
-        [JsonProperty(Filters.DOMAINS)]
-        public List<InlineModel_1> Domains { get; set; }
-
-        /// <summary>
         /// The origin of the word and the way in which its meaning has changed throughout history
         /// </summary>
         [JsonProperty(JSONProperties.ETYMOLOGIES)]
         public List<string> Etymologies { get; set; }
 
         [JsonProperty(Filters.EXAMPLES)]
-        public List<Example> Examples { get; set; }
-
-        /// <summary>
-        /// <em>Optional</em>:
-        /// Extra information on how to use a specific word, each property has the following meaning:
-        /// <br><see cref="InlineModel_1.ID"/>: the word's identifier</br>
-        /// <br><see cref="InlineModel_1.Text"/>: a note text</br>
-        /// <br><see cref="InlineModel_1.Type"/>: <see langword="null"/></br>
-        /// </summary>
-        [JsonProperty(JSONProperties.NOTES)]
-        public List<InlineModel_1> Notes { get; set; }
-
-        /// <summary>
-        /// A particular area in which the Sense occurs, e.g. 'Great Britain'
-        /// </summary>
-        [JsonProperty(Filters.REGIONS)]
-        public List<InlineModel_1> Regions { get; set; }
-
-        /// <summary>
-        /// A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' 
-        /// </summary>
-        [JsonProperty(Filters.REGISTERS)]
-        public List<InlineModel_1> Registers { get; set; }
+        public List<InlineModel_2> Examples { get; set; }
 
         /// <summary>
         /// A list of short statements of the exact meaning of a word
@@ -76,7 +39,7 @@ namespace Main.API
         /// Various words that are used interchangeably depending on the context, e.g 'duck' and 'duck boat'
         /// </summary>
         [JsonProperty(JSONProperties.VARIANT_FORMS)]
-        public List<VariantForm> VariantForms { get; set; }
+        public List<InlineModel_2> VariantForms { get; set; }
 
         /// <summary>
         /// Ordered list of subsenses of a sense ,
