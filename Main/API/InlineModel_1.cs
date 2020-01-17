@@ -7,7 +7,7 @@ namespace Main.API
     /// <summary>
     /// Basic model which contains only <see cref="ID"/>, <see cref="Type"/> and <see cref="Text"/>
     /// </summary>
-    public class ResponseModel
+    public class InlineModel_1
     {
         [JsonProperty(JSONProperties.ID)]
         public string ID { get; set; }

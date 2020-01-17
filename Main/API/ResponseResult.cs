@@ -6,11 +6,11 @@ namespace Main.API
 {
     /// <summary>
     /// Contains a list of <see cref="LexicalEntry"/>s and data related including:
-    /// <br><see cref="ResponseModel.ID"/>: the identifier of word</br>
-    /// <br><see cref="ResponseModel.Type"/>: The json object type. Could be 'headword', 'inflection' or 'phrase'</br>
+    /// <br><see cref="InlineModel_1.ID"/>: the identifier of word</br>
+    /// <br><see cref="InlineModel_1.Type"/>: The json object type. Could be 'headword', 'inflection' or 'phrase'</br>
     /// 
     /// </summary>
-    public class ResponseResult : ResponseModel
+    public class ResponseResult : InlineModel_1
     {
         /// <summary>
         /// IANA language code

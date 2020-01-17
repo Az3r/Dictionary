@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 namespace Main.API
 {
-    public class LemmasReponse : ResponseModel
+    public class LemmasReponse : InlineModel_1
     {
         [JsonProperty("language")]
         public string Language { get; set; }

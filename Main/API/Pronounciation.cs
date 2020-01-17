@@ -44,6 +44,6 @@ namespace Main.API
         /// A particular area in which the pronunciation occurs, e.g. 'Great Britain'
         /// </summary>
         [JsonProperty(Filters.REGIONS)]
-        public List<ResponseModel> Regions { get; set; }
+        public List<InlineModel_1> Regions { get; set; }
     }
 }

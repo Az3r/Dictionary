@@ -13,7 +13,7 @@ namespace Main.API
         /// Provides information about typical syntax used of this sense. Each construction may optionally have one or more examples
         /// </summary>
         [JsonProperty(JSONProperties.CONSTRUCTIONS)]
-        public List<ResponseModel> Constructions { get; set; }
+        public List<InlineModel_1> Constructions { get; set; }
 
         /// <summary>
         /// A grouping of crossreference notes
@@ -23,11 +23,11 @@ namespace Main.API
 
         /// <summary>
         /// A array of words that have relations with word being search, with each property has the following meaning:
-        /// <br><see cref="ResponseModel.ID"/>: The id of word which has relation</br>
-        /// <br><see cref="ResponseModel.Text"/>: The word itself</br>
-        /// <br><see cref="ResponseModel.Type"/>: The type of relation between the two words, see <see cref="API.RelationTypes"/></br>
+        /// <br><see cref="InlineModel_1.ID"/>: The id of word which has relation</br>
+        /// <br><see cref="InlineModel_1.Text"/>: The word itself</br>
+        /// <br><see cref="InlineModel_1.Type"/>: The type of relation between the two words, see <see cref="API.RelationTypes"/></br>
         /// </summary>
-        public List<ResponseModel> CrossReferences { get; set; }
+        public List<InlineModel_1> CrossReferences { get; set; }
 
         /// <summary>
         ///  A list of statements of the exact meaning of a word
@@ -39,7 +39,7 @@ namespace Main.API
         /// A subject, discipline, or branch of knowledge particular to the Sense
         /// </summary>
         [JsonProperty(Filters.DOMAINS)]
-        public List<ResponseModel> Domains { get; set; }
+        public List<InlineModel_1> Domains { get; set; }
 
         /// <summary>
         /// The origin of the word and the way in which its meaning has changed throughout history
@@ -50,23 +50,27 @@ namespace Main.API
         [JsonProperty(Filters.EXAMPLES)]
         public List<Example> Examples { get; set; }
 
+        /// <summary>
+        /// <em>Optional</em>:
+        /// Extra information on how to use a specific word, each property has the following meaning:
+        /// <br><see cref="InlineModel_1.ID"/>: the word's identifier</br>
+        /// <br><see cref="InlineModel_1.Text"/>: a note text</br>
+        /// <br><see cref="InlineModel_1.Type"/>: <see langword="null"/></br>
+        /// </summary>
         [JsonProperty(JSONProperties.NOTES)]
-        public List<ResponseModel> Notes { get; set; }
-
-        [JsonProperty(Filters.PRONUNCIATIONS)]
-        public List<Pronounciation> Pronunciations { get; set; }
+        public List<InlineModel_1> Notes { get; set; }
 
         /// <summary>
         /// A particular area in which the Sense occurs, e.g. 'Great Britain'
         /// </summary>
         [JsonProperty(Filters.REGIONS)]
-        public List<ResponseModel> Regions { get; set; }
+        public List<InlineModel_1> Regions { get; set; }
 
         /// <summary>
         /// A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' 
         /// </summary>
         [JsonProperty(Filters.REGISTERS)]
-        public List<ResponseModel> Registers { get; set; }
+        public List<InlineModel_1> Registers { get; set; }
 
         /// <summary>
         /// A list of short statements of the exact meaning of a word

@@ -26,30 +26,30 @@ namespace Main.API
         ///  A subject, discipline, or branch of knowledge particular to the Sense 
         /// </summary>
         [JsonProperty(Filters.DOMAINS)]
-        public List<ResponseModel> Domains { get; set; }
+        public List<InlineModel_1> Domains { get; set; }
 
         /// <summary>
         /// <em>Optional</em>:
         /// Extra information on how to use a specific word, each property has the following meaning:
-        /// <br><see cref="ResponseModel.ID"/>: the word's identifier</br>
-        /// <br><see cref="ResponseModel.Text"/>: a note text</br>
-        /// <br><see cref="ResponseModel.Type"/>: <see langword="null"/></br>
+        /// <br><see cref="InlineModel_1.ID"/>: the word's identifier</br>
+        /// <br><see cref="InlineModel_1.Text"/>: a note text</br>
+        /// <br><see cref="InlineModel_1.Type"/>: <see langword="null"/></br>
         /// </summary>
-        public List<ResponseModel> Notes { get; set; }
+        public List<InlineModel_1> Notes { get; set; }
 
         /// <summary>
         /// <em>Optional</em>:
         /// A particular area in which the pronunciation occurs, e.g. 'Great Britain' ,
         /// </summary>
         [JsonProperty(Filters.REGIONS)]
-        public List<ResponseModel> Regions { get; set; }
+        public List<InlineModel_1> Regions { get; set; }
 
         /// <summary>
         /// <em>Optional</em>:
         /// A particular area in which the pronunciation occurs, e.g. 'Great Britain' ,
         /// </summary>
         [JsonProperty(Filters.REGISTERS)]
-        public List<ResponseModel> Registers { get; set; }
+        public List<InlineModel_1> Registers { get; set; }
 
         /// <summary>
         /// <em>Optional</em>:

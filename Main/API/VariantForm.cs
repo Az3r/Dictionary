@@ -16,8 +16,8 @@ namespace Main.API
         /// A particular area in which the variant form occurs, e.g. 'Great Britain'
         /// </summary>
         [JsonProperty(Filters.REGIONS)]
-        public List<ResponseModel> Regions { get; set; }
+        public List<InlineModel_1> Regions { get; set; }
 
-        public List<ResponseModel> DerivativeOf { get; set; }
+        public List<InlineModel_1> DerivativeOf { get; set; }
     }
 }
