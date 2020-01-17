@@ -78,6 +78,7 @@ namespace Main.API
         public const string DERIVATIVES = "derivatives  ";
         public const string HOMOGRAPH_NUMBER = "homographNumber";
         public const string SENSES = "senses";
+        public const string ENTRIES = "entries";
     }
 
     /// <summary>

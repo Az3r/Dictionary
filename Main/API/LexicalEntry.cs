@@ -10,17 +10,11 @@ namespace Main.API
         [JsonProperty(Filters.GRAMMATICAL_FEATURES)]
         public List<InlineModel_1> GrammaticalFeatures { get; set; }
 
-        [JsonProperty(JSONProperties.INFLECTION_OF)]
-        public List<InlineModel_1> InfectionOf { get; set; }
-
         [JsonProperty(Filters.LEXICAL_CATEGORY)]
         public InlineModel_1 LexicalCategory { get; set; }
 
-        /// <summary>
-        /// Various words that are used interchangeably depending on the context, e.g 'duck' and 'duck boat'
-        /// </summary>
-        [JsonProperty(JSONProperties.VARIANT_FORMS)]
-        public List<VariantForm> VariantForms { get; set; }
+        [JsonProperty(JSONProperties.ENTRIES)]
+        public List<Entry> Entries { get; set; }
 
         /// <summary>
         /// Other words from which this one derives
