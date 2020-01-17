@@ -79,6 +79,10 @@ namespace Main.API
         public const string HOMOGRAPH_NUMBER = "homographNumber";
         public const string SENSES = "senses";
         public const string ENTRIES = "entries";
+        public const string MATCH_STRING = "matchString";
+        public const string MATCH_TYPE = "matchType";
+        public const string REGION = "region";
+        public const string TOTAL = "total";
     }
 
     /// <summary>

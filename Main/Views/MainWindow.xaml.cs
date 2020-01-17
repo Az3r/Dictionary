@@ -43,17 +43,6 @@ namespace Main.Views
             Keyboard.Focus(tbWordToSearch);
         }
 
-        private void FocusSearchBox()
-        {
-            tbWordToSearch.SelectAll();
-            Keyboard.Focus(tbWordToSearch);
-        }
-
-        private void tbWordToSearch_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
-
         private void Search_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;

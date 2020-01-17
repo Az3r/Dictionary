@@ -25,7 +25,7 @@
             <TextBox Name="tbWordToSearch"
                      Height="30" 
                      Text="swimming" 
-                     VerticalContentAlignment="Center" KeyUp="tbWordToSearch_KeyUp"/>
+                     VerticalContentAlignment="Center"/>
         </DockPanel>
         <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="1">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
