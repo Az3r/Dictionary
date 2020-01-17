@@ -16,5 +16,6 @@ namespace Main.API
 
         [JsonProperty(JSONProperties.TYPE)]
         public string Type { get; set; }
+
     }
 }

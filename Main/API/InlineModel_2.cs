@@ -39,9 +39,5 @@ namespace Main.API
 
         [JsonProperty(JSONProperties.TYPE)]
         public string Type { get; set; }
-
-        ///<summary>IANA language code specifying the language of the word</summary>
-        [JsonProperty(JSONProperties.LANGUAGE)]
-        public string Language { get; set; }
     }
 }
