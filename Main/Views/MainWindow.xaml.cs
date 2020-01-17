@@ -43,7 +43,7 @@ namespace Main.Views
             TaskScheduler scheduler = TaskScheduler.Current;
             VM.Lemmas(word).ContinueWith((task) =>
             {
-                ResponseEntry body = task.Result;
+                ResponseLemmas body = task.Result;
                 if (body is null) VM.ResultText = "Not Found";
                 else VM.ResultText = body.ToString();
             }, scheduler);
