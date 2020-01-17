@@ -21,10 +21,10 @@ namespace Main.ViewModels
             mClient.Timeout = TimeSpan.FromMilliseconds(REQUEST_TIME_OUT);
         }
 
-        public async Task<ResponseBody> Lemmas(string word)
+        public async Task<ResponseEntry> Lemmas(string word)
         {
             string jsonContent = await GetResponseString(word);
-            return JsonConvert.DeserializeObject<ResponseBody>(jsonContent);
+            return JsonConvert.DeserializeObject<ResponseEntry>(jsonContent);
         }
 
         private async Task<string> GetResponseString(string word)
