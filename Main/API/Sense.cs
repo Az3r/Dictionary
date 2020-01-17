@@ -10,12 +10,6 @@ namespace Main.API
     public class Sense
     {
         /// <summary>
-        /// Provides information about typical syntax used of this sense. Each construction may optionally have one or more examples
-        /// </summary>
-        [JsonProperty(JSONProperties.CONSTRUCTIONS)]
-        public List<InlineModel_1> Constructions { get; set; }
-
-        /// <summary>
         /// A grouping of crossreference notes
         /// </summary>
         [JsonProperty(JSONProperties.CROSS_REFERENCE_MARKERS)]

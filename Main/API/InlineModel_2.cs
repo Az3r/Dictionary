@@ -25,11 +25,23 @@ namespace Main.API
         [JsonProperty(Filters.REGISTERS)]
         public List<InlineModel_1> Registers { get; set; }
 
+        [JsonProperty(Filters.PRONUNCIATIONS)]
+        public List<InlineModel_3> Pronunciations { get; set; }
+
         /// <summary>The list of sense identifiers related to the example. Provided in the sentences endpoint only.</summary>
         [JsonProperty(JSONProperties.SENSE_IDS)]
         public List<string> SenseIds { get; set; }
 
+        [JsonProperty(JSONProperties.ID)]
+        public string ID { get; set; }
         [JsonProperty(JSONProperties.TEXT)]
         public string Text { get; set; }
+
+        [JsonProperty(JSONProperties.TYPE)]
+        public string Type { get; set; }
+
+        ///<summary>IANA language code specifying the language of the word</summary>
+        [JsonProperty(JSONProperties.LANGUAGE)]
+        public string Language { get; set; }
     }
 }
